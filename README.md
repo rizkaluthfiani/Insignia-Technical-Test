@@ -1,4 +1,6 @@
 # Insignia-Technical-Test
+## SQL Query
+
 ```SQL
 This SQL code is to fulfil one of the Data Analyst internship assessment tests for Insignia
 SELECT
@@ -34,6 +36,7 @@ LIMIT 1000;
 ```
 
 ---
+## Explanation
 `SELECT`: This query is to display all columns needed for the table. Each column has specific purpose. The selected columns are: year, month, product name and the the number of sales of each product.
 
 `EXTRACT(YEAR FROM orders.created_at) AS year`: This query is to retrieve only the year from the created_at column in orders table. `AS year` as in "year" will be the name of the column.
@@ -59,3 +62,6 @@ LIMIT 1000;
 `ORDER BY year DESC, month DESC, total_sales DESC`: to sort the results of a query based on the three columns: year, month and total_sales in descending order, meaning that we get the records starting with the most recent year and month. Within each year and month, we get the first list of the highest sales products.
 
 `LIMIT 1000`: This query is to display only the first 1000 records.
+
+## Supported Links
+https://github.com/rizkaluthfiani/Insignia-Technical-Test/blob/main/view_report_monthly_orders_product_agg.json (Results)
